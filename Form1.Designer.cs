@@ -28,72 +28,73 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.btnSubmit = new System.Windows.Forms.Button();
+            this.txtInput = new System.Windows.Forms.TextBox();
+            this.lblInstruction = new System.Windows.Forms.Label();
+            this.lblMessage = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // btnSubmit
             // 
-            this.button1.AccessibleName = "btnSubmit";
-            this.button1.BackColor = System.Drawing.SystemColors.MenuText;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.Location = new System.Drawing.Point(147, 213);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(147, 42);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Click Me";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnSubmit.AccessibleName = "btnSubmit";
+            this.btnSubmit.BackColor = System.Drawing.SystemColors.MenuText;
+            this.btnSubmit.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSubmit.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSubmit.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnSubmit.Location = new System.Drawing.Point(70, 176);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(147, 42);
+            this.btnSubmit.TabIndex = 0;
+            this.btnSubmit.Text = "Click Me";
+            this.btnSubmit.UseVisualStyleBackColor = false;
+            this.btnSubmit.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
+            // txtInput
             // 
-            this.textBox1.AccessibleName = "txtInput";
-            this.textBox1.Location = new System.Drawing.Point(304, 113);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(265, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtInput.AccessibleName = "txtInput";
+            this.txtInput.Location = new System.Drawing.Point(264, 63);
+            this.txtInput.Name = "txtInput";
+            this.txtInput.Size = new System.Drawing.Size(265, 20);
+            this.txtInput.TabIndex = 1;
             // 
-            // label1
+            // lblInstruction
             // 
-            this.label1.AccessibleName = "lblInstruction";
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.Control;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(82, 113);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(195, 22);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Please enter your name:";
+            this.lblInstruction.AccessibleName = "lblInstruction";
+            this.lblInstruction.AutoSize = true;
+            this.lblInstruction.BackColor = System.Drawing.SystemColors.Control;
+            this.lblInstruction.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.lblInstruction.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInstruction.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblInstruction.Location = new System.Drawing.Point(22, 61);
+            this.lblInstruction.Name = "lblInstruction";
+            this.lblInstruction.Size = new System.Drawing.Size(195, 22);
+            this.lblInstruction.TabIndex = 2;
+            this.lblInstruction.Text = "Please enter your name:";
             // 
-            // label2
+            // lblMessage
             // 
-            this.label2.AccessibleName = "lblMessage";
-            this.label2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label2.Location = new System.Drawing.Point(347, 214);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(139, 42);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Message";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblMessage.AccessibleName = "lblMessage";
+            this.lblMessage.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblMessage.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMessage.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lblMessage.Location = new System.Drawing.Point(240, 176);
+            this.lblMessage.Name = "lblMessage";
+            this.lblMessage.Size = new System.Drawing.Size(289, 42);
+            this.lblMessage.TabIndex = 3;
+            this.lblMessage.Text = "Message";
+            this.lblMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
             this.AccessibleName = "MainForm";
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(630, 323);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(590, 265);
+            this.Controls.Add(this.lblMessage);
+            this.Controls.Add(this.lblInstruction);
+            this.Controls.Add(this.txtInput);
+            this.Controls.Add(this.btnSubmit);
             this.Font = new System.Drawing.Font("Monotype Corsiva", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Form1";
             this.Text = "Getting Input";
@@ -104,10 +105,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnSubmit;
+        private System.Windows.Forms.TextBox txtInput;
+        private System.Windows.Forms.Label lblInstruction;
+        private System.Windows.Forms.Label lblMessage;
     }
 }
 

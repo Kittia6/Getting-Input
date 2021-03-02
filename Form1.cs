@@ -12,9 +12,17 @@ namespace Getting_Input
 {
     public partial class Form1 : Form
     {
+        string name;
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string name = txtInput.Text;
+            lblMessage.Text = "Hello, " + name;
+
         }
     }
 }
