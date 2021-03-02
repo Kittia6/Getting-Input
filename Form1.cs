@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace Getting_Input
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
         string name;
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
         }

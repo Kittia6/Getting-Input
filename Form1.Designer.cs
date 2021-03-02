@@ -1,6 +1,6 @@
 ﻿namespace Getting_Input
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -85,7 +85,7 @@
             this.lblMessage.Text = "Message";
             this.lblMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Form1
+            // MainForm
             // 
             this.AccessibleName = "MainForm";
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
@@ -96,7 +96,7 @@
             this.Controls.Add(this.txtInput);
             this.Controls.Add(this.btnSubmit);
             this.Font = new System.Drawing.Font("Monotype Corsiva", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.Text = "Getting Input";
             this.ResumeLayout(false);
             this.PerformLayout();
